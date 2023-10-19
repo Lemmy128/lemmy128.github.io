@@ -4,18 +4,76 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home</title>
 <style type="text/css">
-.clickergame {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 36px;
-	color: #FFF;
+#apDiv1 {
+	position: absolute;
+	width: 398px;
+	height: 242px;
+	z-index: 1;
+	visibility: inherit;
+	overflow: visible;
+	left: 493px;
+	top: 429px;
+}
+body {
+	background-image: url(assets/wingbackground.png);
+	background-repeat: repeat;
+	background-color: #999;
+}
+body,td,th {
+	font-size: x-small;
+	color: #000;
+}
+#apDiv2 {
+	position: absolute;
+	width: 122px;
+	height: 120px;
+	z-index: 2;
+	left: 621px;
+	top: 287px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 368px;
+	height: 160px;
+	z-index: 3;
+	left: 501px;
+	top: 8px;
+	font-size: xx-large;
 }
 </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body bgcolor="#333333">
-<div align="center">
-  <p><a href="https://lemmy128.github.io/clickergame/" title="lol" class="clickergame">Clicker Game
-  </a></p>
+<body bgcolor="#663333" onload="MM_preloadImages('assets/process.png')">
+<div id="apDiv1"><a href="lemmy128.github.io/process" target="_blank" onmouseover="MM_swapImage('Image1','','assets/process.png',1)" onmouseout="MM_swapImgRestore()"><img src="assets/process.png" name="Image1" width="400" height="241" id="Image1" align="baseline" /></a></div>
+<div id="apDiv2"><img src="assets/earth.gif" width="128" height="124" /></div>
+d
+<div id="apDiv3">
+  <p>HELLO IM LEMMY</p>
+  <p>WELCOME TO MY WEBSITE</p>
+  <p>&nbsp;</p>
 </div>
 </body>
 </html>
