@@ -11,8 +11,8 @@
 	z-index: 1;
 	visibility: inherit;
 	overflow: visible;
-	left: 493px;
-	top: 429px;
+	left: 518px;
+	top: 427px;
 }
 body {
 	background-image: url(assets/wingbackground.png);
@@ -88,7 +88,22 @@ body,td,th {
 	height: 95px;
 	z-index: 8;
 	left: 635px;
-	top: 247px;
+	top: 233px;
+}
+#apDiv9 {
+	position: absolute;
+	width: 941px;
+	height: 859px;
+	z-index: 9;
+	left: 258px;
+	top: 11px;
+	border: 2px solid #be00be;
+	-webkit-box-shadow: inset 0 0 50px -10px #be00be;
+	box-shadow: inset 0 0 50px -10px #be00be;
+	border-radius: 10px;
+	overflow: visible;
+	padding: 2em;
+	visibility: visible;
 }
 </style>
 <script type="text/javascript">
@@ -113,6 +128,27 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
+function switchImage(imgName, imgSrc) 
+
+{
+
+  if (document.images)
+
+  {
+
+    if (imgSrc != "none")
+
+    {
+
+      document.images[imgName].src = imgSrc;
+
+    }
+
+  }
+
+}
+
+
 </script>
 </head>
 
@@ -125,10 +161,12 @@ d
   <p>WELCOME TO MY WEBSITE</p>
   <p>&nbsp;</p>
 </div>
-<div id="apDiv4">PLEASE PLAY MY GAME</div>
+<div id="apDiv4">PLEASE PLAy MY GAME</div>
 <div id="apDiv5">PLEASE</div>
 <div id="apDiv6"><img src="assets/funnyshark.gif" width="240" height="134"></div>
-<div id="apDiv7"><img src="assets/Goldenapple.gif" width="250" height="250"></div>
-<div id="apDiv8"><img src="assets/kirb.gif" width="100" height="102"></div>
+<div id="apDiv8"><img src="assets/kirb.gif" alt="" name="kirby" width="100" height="102" id="kirby">
+</div>
+-
+<div id="apDiv9"></div>
 </body>
 </html>
